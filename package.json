@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dannykoehlerpoetsch.github.io/dictionary-english",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

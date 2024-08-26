@@ -28,7 +28,8 @@
 .wrapper {
   background-color: var(--secondary-color);
   min-height: 40vh;
-  width: 80%;
+  width: 100%;
+  max-width: 1080px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -93,7 +94,8 @@
     align-items: center;
 
     input {
-      width: 400px;
+      width: 80%;
+      max-width: 400px;
       font-size: 1rem;
       padding: 0.5rem 0.3rem;
       margin-bottom: 1.5rem;
@@ -126,6 +128,11 @@
     font-weight: bold;
     font-style: italic;
     margin: 1em 0;
+  }
+
+  audio {
+    width: 100%;
+    max-width: 350px;
   }
 
   .definition {
