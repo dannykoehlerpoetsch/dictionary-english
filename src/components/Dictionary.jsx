@@ -61,7 +61,7 @@ const Dictionary = () => {
           <h2 className="word">"{datas[0].word}"</h2>
           <h3>Phonetic: {datas[0].phonetic}</h3>
           {datas[0].phonetics && datas[0].phonetics[0]?.audio && (
-            <audio controls>
+            <audio key={datas[0].phonetics[0].audio} controls>
               <source src={datas[0].phonetics[0].audio} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
