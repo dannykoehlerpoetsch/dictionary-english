@@ -40,15 +40,21 @@ const Dictionary = () => {
         </a>
       </span>
       <h1 id="top">English Dictionary</h1>
-      <div className="input-button-wrapper">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          fetchDefinition();
+        }}
+        className="input-button-wrapper"
+      >
         <input
           type="text"
           value={word}
           onChange={(e) => setWord(e.target.value)}
           placeholder="Enter a word..."
         />
-        <button onClick={fetchDefinition}>Search</button>
-      </div>
+        <button>Search</button>
+      </form>
       {error && (
         <p className="error">
           <span>***</span>
